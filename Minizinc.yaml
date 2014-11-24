@@ -1,4 +1,9 @@
 # [PackageDev] target_format: plist, ext: tmLanguage
+#
+#  @author: heartnest 
+#  heartnest [at] live . cn
+#
+#
 ---
 name: Minizinc
 scopeName: source.mzn
@@ -24,13 +29,12 @@ patterns:
   name : constant.numeric.mzn
 
 # #operators
-- match : '\s*(not|==|~=|&gt;|&gt;=|&lt;|&lt;=|&amp;|&amp;&amp;|:|\||\|\||\+|-|\*|\.\*|/|\./|\\|\.\\|\^|\.\^)\s*'
+- match : '\s*(not|\+|\-|\<\-\>|\<|\>|\/\\|\/|xor|\\\/|\||=|\!=|subset|superset|union|diff|symdiff|\.\.|intersect|\+\+|\*|div|mod)\s*'
   name : keyword.operator.mzn
-# the worked version
 
-# - match : '\s*(not|==|~=|&gt;|&gt;=|&lt;|&lt;=|&amp;|&amp;&amp;|:|\||\|\||\+|-|\*|\.\*|/|\./|\\|\.\\|\^|\.\^)\s*'
-#   name : keyword.operator.mzn
-
+# version in the book
+# - match: \b(not|+|-|<->|->|<-|\/|xor|/\|<|>|<=|>=|==|=|!=|in|subset|superset|union|diff|symdiff|..|intersect|++|*|/|div|mod)\b
+#   name: keyword.operator.mzn
 
 #key words
 - match: \b(ann|annotation|any|array|assert|bool|constraint|enum|float|function|in|include|int|list|of|op|output|minimize|maximize|par|predicate|record|set|solve|string|test|tuple|type|var|where)\b
@@ -51,10 +55,3 @@ patterns:
 #others found - general
 - match: (?i)\b(forall|set_search|partition_set)(?=\s*\()
   name: support.function.mzn
-
-# -  begin : 'if (\s.*)?$' 
-#    end : 'endif'
-#    contentName : 'comment.block.preprocessor.mzn'
-
-# - match: \b(not|+|-|<->|->|<-|\/|xor|/\|<|>|<=|>=|==|=|!=|in|subset|superset|union|diff|symdiff|..|intersect|++|*|/|div|mod)\b
-#   name: keyword.operator.mzn
