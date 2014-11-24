@@ -14,3 +14,8 @@ In the configuration step, you need to first install "Package Controll" and then
 
 
 Keyworks list in the minizinc tutorial is not complete, as a result, we intend to perfert the syntax file over the time while learning this language.
+
+ref: 
+ - [Custom syntax highlighting in Sublime Text 2](http://stackoverflow.com/questions/15221150/custom-syntax-highlighting-in-sublime-text-2)
+ - [Customize syntax highlighting, FilePath](http://www.sublimetext.com/forum/viewtopic.php?f=2&t=1057)
+ - [Language Grammar](http://manual.macromates.com/en/language_grammars#naming_conventions.html)
