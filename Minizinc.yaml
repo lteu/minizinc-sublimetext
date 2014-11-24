@@ -1,0 +1,60 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: Minizinc
+scopeName: source.mzn
+fileTypes: [mzn]
+uuid: 1e47a6c9-24f4-416d-b5af-db02312df3e4
+
+patterns:
+
+#quoted content
+- begin : '"'
+  end : '"'
+  name: string.quoted.double.language.mzn
+  patterns :
+  - {  name = 'constant.character.escape.mzn';
+                 match = '\\.';
+    }
+#percentage comment 
+- match : '%(\\"|[^"])*(?="|$\n?)'
+  name : comment.line.percentage
+
+#constants
+- match : '[0-9_\x{7f}-\x{ff}]*'
+  name : constant.numeric.mzn
+
+# #operators
+- match : '\s*(not|==|~=|&gt;|&gt;=|&lt;|&lt;=|&amp;|&amp;&amp;|:|\||\|\||\+|-|\*|\.\*|/|\./|\\|\.\\|\^|\.\^)\s*'
+  name : keyword.operator.mzn
+# the worked version
+
+# - match : '\s*(not|==|~=|&gt;|&gt;=|&lt;|&lt;=|&amp;|&amp;&amp;|:|\||\|\||\+|-|\*|\.\*|/|\./|\\|\.\\|\^|\.\^)\s*'
+#   name : keyword.operator.mzn
+
+
+#key words
+- match: \b(ann|annotation|any|array|assert|bool|constraint|enum|float|function|in|include|int|list|of|op|output|minimize|maximize|par|predicate|record|set|solve|string|test|tuple|type|var|where)\b
+  name: keyword.language.mzn
+
+#funtions in book
+- match: (?i)\b(abort|abs|acosh|array_intersect|array_union|array1d|array2d|array3d|array4d|array5d|array6d|asin|assert|atan|bool2int|card|ceil|concat|cos|cosh|dom|dom_array|dom_size|fix|exp|floor|index_set|index_set_1of2|index_set_2of2|index_set_1of3|index_set_2of3|index_set_3of3|int2float|is_fixed|join|lb|lb_array|length|ln|log|log2|log10|min|max|pow|product|round|set2array|show|show_int|show_float|sin|sinh|sqrt|sum|tan|tanh|trace|ub|ub_array)(?=\s*\()
+  name: support.function.mzn
+
+#others found - controll
+- match: \b(if|then|else|endif)\b
+  name: keyword.controll.mzn
+
+#others found - lang
+- match: \b(satisfy|maximize|minimize)\b
+  name: keyword.language.mzn
+
+#others found - general
+- match: (?i)\b(forall|set_search|partition_set)(?=\s*\()
+  name: support.function.mzn
+
+# -  begin : 'if (\s.*)?$' 
+#    end : 'endif'
+#    contentName : 'comment.block.preprocessor.mzn'
+
+# - match: \b(not|+|-|<->|->|<-|\/|xor|/\|<|>|<=|>=|==|=|!=|in|subset|superset|union|diff|symdiff|..|intersect|++|*|/|div|mod)\b
+#   name: keyword.operator.mzn
