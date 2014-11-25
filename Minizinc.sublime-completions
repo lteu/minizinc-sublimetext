@@ -1,0 +1,29 @@
+{
+	"scope": "source.mzn - variable.other.mzn",
+
+	"completions":
+	[
+		"mzn",
+
+		{ "trigger": "constraint", "contents": "constraint" },
+		{ "trigger": "satisfy", "contents": "satisfy" },
+		{ "trigger": "minimize", "contents": "minimize" },
+		{ "trigger": "maximize", "contents": "maximize" },
+		{ "trigger": "float", "contents": "float" },
+		{ "trigger": "in", "contents": "in" },
+		{ "trigger": "of", "contents": "of" },
+		{ "trigger": "int", "contents": "int" },
+		{ "trigger": "list", "contents": "list" },
+		{ "trigger": "assert", "contents": "assert" },
+		{ "trigger": "string", "contents": "string" },
+		{ "trigger": "var", "contents": "var" },
+		{ "trigger": "where", "contents": "where" },
+		{ "trigger": "type", "contents": "type" },
+		{ "trigger": "include", "contents": "include" },
+		{ "trigger": "output", "contents": "output[${1:arg}];" },
+		{ "trigger": "array", "contents": "array[]" },
+		{ "trigger": "solve", "contents": "solve ${1:arg};" },
+		{ "trigger": "forall", "contents": "forall(${1:item} in ${2:range})" },
+		{ "trigger": "fix", "contents": "fix(${1:arg})" }
+	]
+}
