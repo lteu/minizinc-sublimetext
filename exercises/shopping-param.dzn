@@ -1,0 +1,6 @@
+% Data file for simple production planning model
+nproducts = 6; % banana cakes and chocolate cakes 
+pname = ["beats", "alviero","tucano","terme","buffet","wenger"];
+price = [99, 250, 30, 80, 25, 50];
+happiness = [88, 80, 50, 85, 30, 60];
+money = 200;

@@ -7,7 +7,7 @@
 ---
 name: Minizinc
 scopeName: source.mzn
-fileTypes: [mzn]
+fileTypes: [mzn,dzn]
 uuid: 1e47a6c9-24f4-416d-b5af-db02312df3e4
 
 patterns:
@@ -20,21 +20,23 @@ patterns:
   - {  name = 'constant.character.escape.mzn';
                  match = '\\.';
     }
+
+#block comment
+- begin : '/\*'
+  end : '\*/'
+  name : comment.block.mzn
+
 #percentage comment 
 - match : '%(\\"|[^"])*(?="|$\n?)'
   name : comment.line.percentage
 
 #constants
-- match : '[0-9_\x{7f}-\x{ff}]*'
+- match : '\b((0(x|X)[0-9a-fA-F]+)|([0-9]+(\.[0-9]+)?))\b'
   name : constant.numeric.mzn
 
 # #operators
 - match : '\s*(not|\+|\-|\<\-\>|\<|\>|\/\\|\/|xor|\\\/|\||=|\!=|subset|superset|union|diff|symdiff|\.\.|intersect|\+\+|\*|div|mod)\s*'
   name : keyword.operator.mzn
-
-# version in the book
-# - match: \b(not|+|-|<->|->|<-|\/|xor|/\|<|>|<=|>=|==|=|!=|in|subset|superset|union|diff|symdiff|..|intersect|++|*|/|div|mod)\b
-#   name: keyword.operator.mzn
 
 #key words
 - match: \b(ann|annotation|any|array|assert|bool|constraint|enum|float|function|in|include|int|list|of|op|output|minimize|maximize|par|predicate|record|set|solve|string|test|tuple|type|var|where)\b
@@ -45,7 +47,7 @@ patterns:
   name: support.function.mzn
 
 #others found - controll
-- match: \b(if|then|else|endif)\b
+- match: \b(if|then|else|endif|false|true)\b
   name: keyword.controll.mzn
 
 #others found - lang
