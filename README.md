@@ -27,7 +27,7 @@ or
 
 Example
 ====
-![alt text](http://datalet.net/attachments/mzn-sublime.png "Highlited Minizinc in Sublime Text")
+![alt text](http://datalet.net/attachments/mzn-sm.png "Highlited Minizinc in Sublime Text")
 
 
 Authors
