@@ -17,6 +17,7 @@
 		{ "trigger": "assert", "contents": "assert(${1:arg});" },
 		{ "trigger": "string", "contents": "string: " },
 		{ "trigger": "set", "contents": "set" },
+		{ "trigger": "predicate", "contents": "predicate" },
 		{ "trigger": "var", "contents": "var" },
 		{ "trigger": "where", "contents": "where" },
 		{ "trigger": "type", "contents": "type" },

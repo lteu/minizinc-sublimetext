@@ -1,7 +1,7 @@
 # [PackageDev] target_format: plist, ext: tmLanguage
 #
 #  @author: heartnest 
-#  heartnest [at] live . cn
+#  lteu [at] icloud. com
 #
 #
 ---
@@ -25,6 +25,10 @@ patterns:
 - begin : '/\*'
   end : '\*/'
   name : comment.block.mzn
+
+## Single line comment
+- name: comment.line.percentage.mzn
+  match: \%.*
 
 #percentage comment 
 - match : '%(\\"|[^"])*(?="|$\n?)'
