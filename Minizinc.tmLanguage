@@ -78,7 +78,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(satisfy|maximize|minimize|let)\b</string>
+			<string>\b(satisfy|maximize|minimize|let|exists)\b</string>
 			<key>name</key>
 			<string>keyword.language.mzn</string>
 		</dict>

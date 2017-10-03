@@ -55,7 +55,7 @@ patterns:
   name: keyword.controll.mzn
 
 #others found - lang
-- match: \b(satisfy|maximize|minimize|let)\b
+- match: \b(satisfy|maximize|minimize|let|exists)\b
   name: keyword.language.mzn
 
 #others found - general

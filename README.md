@@ -4,14 +4,20 @@ Minizinc language package for Sublime Text 2.
 
 ## Installation:
 
+Create the folder `Minizinc` in the language packages, paste the configuration files and restart your Sublime Text.
+This could be done by following either of the two ways:
+
 - minizinc-sublimetext:$~ cp Minizinc.* ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/Minizinc/
-- Restart your Sublime Text
+
+or
+
+- Browse "Language Packages" by following the path `Preferences` -> `Browse Packages...`
 
 ## For developer:
 
 - Please feel free to improve the src/Minizinc.yaml. In Sublime Text, by pressing "fn + F7", you can generate new *.tmLanguage files.
 - The Minizinc.sublime-completions contains keywords used for autocomplete.
-- Browse "Language Packages" by following the path `Preferences` -> `Browse Packages...`
+
 
 ## Note that:
 - This package contains all the keyworks listed in the [Minizinc Tutorial](http://www.minizinc.org/downloads/doc-latest/minizinc-tute.pdf) which might not be complete. But we are improving our package all the time.
