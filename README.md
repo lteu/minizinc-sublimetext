@@ -24,6 +24,12 @@ or
 - Currently this package is tested only with Sublime Text 2 on MAC OSX.
 - In order to create syntax by having "Tools > Packages > Package Developments > New Syntax Definition", you need to first install "Package Controll" and then "AAAPackageDev". 
 
+
+Example
+====
+![alt text](http://datalet.net/attachments/mzn-sublime.png "Highlited Minizinc in Sublime Text")
+
+
 Authors
 ======
 - Tong Liu (t.liu at cs.unibo.it)
@@ -44,5 +50,7 @@ REF:
  - [Customize syntax highlighting, FilePath](http://www.sublimetext.com/forum/viewtopic.php?f=2&t=1057)
  - [Language Grammar](http://manual.macromates.com/en/language_grammars#naming_conventions.html)
  - [Syntax Definition Official](https://www.sublimetext.com/docs/3/syntax.html)
+
+
  - [Syntax Definition unOfficial](http://docs.sublimetext.info/en/latest/reference/comments.html)
  - [sublime-mzn](https://github.com/astenmark/sublime-mzn) by Andreas Stenmark
