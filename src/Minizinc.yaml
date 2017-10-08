@@ -39,8 +39,12 @@ patterns:
   name : constant.numeric.mzn
 
 # #operators
-- match : '\s*(not|\+|\-|\<\-\>|\<|\>|\/\\|\/|xor|\\\/|\||=|\!=|subset|superset|union|diff|symdiff|\.\.|intersect|\+\+|\*|div|mod)\s*'
+- match : '\s*(\+|\-|\<\-\>|\<|\>|\/\\|\/|\\\/|\||=|\!=|\.\.|\+\+|\*)\s*'
   name : keyword.operator.mzn
+
+# operators key words
+- match: \b(diff|symdiff|union|superset|subset|xor|not|intersect|div|mod)\b
+  name: keyword.language.mzn
 
 #key words
 - match: \b(ann|annotation|any|array|assert|bool|constraint|enum|float|function|in|include|int|list|of|op|output|minimize|maximize|par|predicate|record|set|solve|string|test|tuple|type|var|where)\b

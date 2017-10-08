@@ -54,9 +54,15 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\s*(not|\+|\-|\&lt;\-\&gt;|\&lt;|\&gt;|\/\\|\/|xor|\\\/|\||=|\!=|subset|superset|union|diff|symdiff|\.\.|intersect|\+\+|\*|div|mod)\s*</string>
+			<string>\s*(\+|\-|\&lt;\-\&gt;|\&lt;|\&gt;|\/\\|\/|\\\/|\||=|\!=|\.\.|\+\+|\*)\s*</string>
 			<key>name</key>
 			<string>keyword.operator.mzn</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(diff|symdiff|union|superset|subset|xor|not|intersect|div|mod)\b</string>
+			<key>name</key>
+			<string>keyword.language.mzn</string>
 		</dict>
 		<dict>
 			<key>match</key>
