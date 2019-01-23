@@ -15,10 +15,10 @@ MiniZinc syntax package for Sublime Text.
 
 - Please feel free to improve the ``src/MiniZinc.yaml``. In Sublime Text, by pressing `fn + F7`, you can generate new `*.tmLanguage` files.
 - The `MiniZinc.sublime-completions` contains keywords used for auto-complete.
-- To create a new language syntax from scratch, you need to enable the function ``Tools > Packages > Package Developments > New Syntax Definition``. This can be accomplished by installing first the `Package Control` then the `AAAPackageDev`ßß. 
+- To create a new language syntax from scratch, you need to enable the function ``Tools > Packages > Package Developments > New Syntax Definition``. This can be accomplished by installing first the `Package Control` then the `AAAPackageDev`. 
 
 ## Note that:
-- This package contains all the keywords listed in the [MiniZinc Tutorial](http://www.minizinc.org/downloads/doc-latest/minizinc-tute.pdf) which is not complete. But we are improving it all the time.
+- This package contains all the keywords listed in the [MiniZinc Tutorial](http://www.minizinc.org/downloads/doc-latest/minizinc-tute.pdf) which is not complete; we are improving it all the time.
 - Currently this package is tested with Sublime Text 2 and Sublime Text 3 on MAC OSX.
 
 
