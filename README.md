@@ -1,34 +1,30 @@
-Minizinc Sublimetext
+MiniZinc Sublime text
 ====
-Minizinc language package for Sublime Text 2.
+MiniZinc syntax package for Sublime Text. 
+
 
 ## Installation:
 
-Create the folder `Minizinc` in the language packages, paste the configuration files and restart your Sublime Text.
-This could be done by following either of the two ways:
+1. Download this Repo
+1. Move the folder `MiniZinc` to the Sublime Text Package directory.
+	* The directory can be found by following `Sublime Text` -> `Preferences` -> `Browse Packages...`
+	* It generates a path like `~/Library/Application\ Support/Sublime\ Text\ 2/Packages/MiniZinc/` 
 
-- minizinc-sublimetext:$~ cp Minizinc.* ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/Minizinc/
-
-or
-
-- Browse "Language Packages" by following the path `Preferences` -> `Browse Packages...`
 
 ## For developer:
 
-- Please feel free to improve the src/Minizinc.yaml. In Sublime Text, by pressing "fn + F7", you can generate new *.tmLanguage files.
-- The Minizinc.sublime-completions contains keywords used for autocomplete.
-
+- Please feel free to improve the src/MiniZinc.yaml. In Sublime Text, by pressing "fn + F7", you can generate new *.tmLanguage files.
+- The MiniZinc.sublime-completions contains keywords used for auto-complete.
+- To create a new language syntax from scratch, you need to enable the function "Tools > Packages > Package Developments > New Syntax Definition". This can be accomplished by installing first the "Package Control" then the "AAAPackageDev". 
 
 ## Note that:
-- This package contains all the keyworks listed in the [Minizinc Tutorial](http://www.minizinc.org/downloads/doc-latest/minizinc-tute.pdf) which might not be complete. But we are improving our package all the time.
-- Currently this package is tested only with Sublime Text 2 on MAC OSX.
-- In order to create syntax by having "Tools > Packages > Package Developments > New Syntax Definition", you need to first install "Package Controll" and then "AAAPackageDev". 
+- This package contains all the keywords listed in the [MiniZinc Tutorial](http://www.minizinc.org/downloads/doc-latest/minizinc-tute.pdf) which is not complete. But we are improving it all the time.
+- Currently this package is tested with Sublime Text 2 and Sublime Text 3 on MAC OSX.
 
 
 Example
 ====
-![alt text](http://datalet.net/attachments/mzn-sm.png "Highlited Minizinc in Sublime Text")
-
+![alt text](https://github.com/lteu/MiniZinc-sublimetext/blob/master/pic/mzn-sm.png "Highlighted MiniZinc in Sublime Text")
 
 Authors
 ======
@@ -37,7 +33,7 @@ Authors
 
 License :copyright:
 ===
-Copyright (c) 2015-2017 Tong Liu
+Copyright © 2015-2019 Tong Liu
 
 The configuration files are free of use: you can redistribute it and/or modify it under the terms of the GNU General Public License. The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
@@ -50,7 +46,5 @@ REF:
  - [Customize syntax highlighting, FilePath](http://www.sublimetext.com/forum/viewtopic.php?f=2&t=1057)
  - [Language Grammar](http://manual.macromates.com/en/language_grammars#naming_conventions.html)
  - [Syntax Definition Official](https://www.sublimetext.com/docs/3/syntax.html)
-
-
  - [Syntax Definition unOfficial](http://docs.sublimetext.info/en/latest/reference/comments.html)
  - [sublime-mzn](https://github.com/astenmark/sublime-mzn) by Andreas Stenmark

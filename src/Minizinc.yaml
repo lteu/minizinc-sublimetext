@@ -5,7 +5,7 @@
 #
 #
 ---
-name: Minizinc
+name: MiniZinc
 scopeName: source.mzn
 fileTypes: [mzn,dzn]
 uuid: 1e47a6c9-24f4-416d-b5af-db02312df3e4

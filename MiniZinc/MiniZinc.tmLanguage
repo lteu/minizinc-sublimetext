@@ -8,7 +8,7 @@
 		<string>dzn</string>
 	</array>
 	<key>name</key>
-	<string>Minizinc</string>
+	<string>MiniZinc</string>
 	<key>patterns</key>
 	<array>
 		<dict>
