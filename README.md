@@ -1,14 +1,14 @@
 MiniZinc Sublime text
 ====
-MiniZinc syntax package for Sublime Text. 
+MiniZinc syntax package for Sublime Text 3. 
 
 
 ## Installation:
 
 1. Download this Repo
 1. Move the folder `MiniZinc` to the Sublime Text Package directory.
-	* The directory can be found by following `Sublime Text` -> `Preferences` -> `Browse Packages...`
-	* It generates a path like `~/Library/Application\ Support/Sublime\ Text\ 2/Packages/MiniZinc/` 
+	* The directory can be found by following `Sublime Text` -> `Preferences` -> `Browse Packages...` -> `User`
+	* It generates a path like `~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/MiniZinc/` 
 
 
 ## For developer:
