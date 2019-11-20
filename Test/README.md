@@ -1,0 +1,1 @@
+Open these files with Sublime Text to see if it is correctly installed.
